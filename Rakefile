@@ -10,8 +10,10 @@ task :default do
   sh %{rake -T}
 end
 
-# Generating API documentation, run with 'rake yard'
-require 'yard'
-YARD::Rake::YardocTask.new do |t|
-  t.options =  ['-m','markdown']
+if RUBY_VERSION >= "1.9"
+  # Generating API documentation, run with 'rake yard'
+  require 'yard'
+  YARD::Rake::YardocTask.new do |t|
+    t.options =  ['-m','markdown']
+  end
 end

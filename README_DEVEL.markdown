@@ -19,5 +19,6 @@
 
     bundle exec rake yard
 
-The generated documentation goes to `doc/` directory.
+The generated documentation goes to `doc/` directory. Note that this works only
+under ruby >= 1.9.
 

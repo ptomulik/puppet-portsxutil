@@ -64,6 +64,10 @@ and the following classes:
 - __Puppet::Util::PTomulik::Packagex::Portsx::Record__ - superclass for PkgRecord
   and PortRecord
 
+The module __Puppet::Util::PTomulik::Packagex::Portsx__ includes both the
+__PortSearch__ and __PkgSearch__, so it may be used if you wish to have the
+functionality of both modules in your class.
+
 ### Library functionality
 
 The __PortSearch__ module provides methods that facilitate searching ports
@@ -150,7 +154,8 @@ as follows:
 bundle exec rake yard
 ```
 
-The generated documentation is written to `doc/`.
+The generated documentation is written to `doc/`. Note that this works only on
+ruby >= 1.9.
 
 ## Limitations
 

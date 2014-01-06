@@ -6,8 +6,9 @@ group :development, :test do
   gem 'puppetlabs_spec_helper',  :require => false                              
   if RUBY_VERSION >= "1.9"
     gem 'coveralls', :require => false
+    gem 'yard'
+    gem 'redcarpet'
   end
-  gem 'yard', :require => false
 end                                                                             
 
 
