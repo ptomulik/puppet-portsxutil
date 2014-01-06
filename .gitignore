@@ -2,7 +2,19 @@
 Gemfile.lock
 vendor
 pkg
-spec/fixtures
+# Ignore all from spec/fixtures but leave our fixtures in repository
+spec/fixtures/*
+!spec/fixtures/unit/
+spec/fixtures/unit/*
+!spec/fixtures/unit/puppet/
+spec/fixtures/unit/puppet/*
+!spec/fixtures/unit/puppet/util/
+spec/fixtures/unit/puppet/util/*
+!spec/fixtures/unit/puppet/util/ptomulik/
+spec/fixtures/unit/puppet/util/ptomulik/*
+!spec/fixtures/unit/puppet/util/ptomulik/packagex/
+spec/fixtures/unit/puppet/util/ptomulik/packagex/*
+!spec/fixtures/unit/puppet/util/ptomulik/packagex/portsx
 spec/lib
 .rspec_system
 .bundle
